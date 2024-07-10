@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            position: relative; /* Añadido para el menú desplegable */
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #ffd700; /* Cambia de color al pasar el cursor */
+        }
+        /* Menú desplegable */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #666;
+            padding: 10px 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            display: block;
+            margin: 0;
+        }
+        nav ul li ul li a {
+            color: #fff;
+            padding: 5px 10px;
+            display: block;
+            text-align: left;
+        }
+        nav ul li ul li a:hover {
+            background-color: #333;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Estilo añadido */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            position: relative;
+        }
+        header li a {
+            display: block;
+            padding: 20px;
+        }
+        header li:hover > ul {
+            display: block;
+        }
+        header ul ul {
+            display: none;
+            position: absolute;
+            top: 60px; /* Ajustado para que el submenú aparezca correctamente */
+            left: 0;
+            background: #35424a;
+            padding: 0;
+            list-style: none;
+            z-index: 1000; /* Añadir un z-index para que el submenú se superponga correctamente */
+        }
+        header ul ul li {
+            float: none;
+            border-top: 1px solid #666;
+        }
+        header ul ul li a {
+            padding: 15px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            background-size: cover;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 100px;
+        }
+        .showcase h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portafolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+                <ul>
+                    <li><a href="#">Subpágina 1</a></li>
+                    <li><a href="#">Subpágina 2</a></li>
+                    <li><a href="#">Subpágina 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Proyectos</a>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/url2.html">Llamado de api</a></li>
+                    <li><a href="#">Proyecto 2</a></li>
+                    <li><a href="#">Proyecto 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/contacto.html">Información de contacto</a></li>
+                    <li><a href="#">Formulario de contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>¡Bienvenido!</h2>
+        <p>Esta es una página web básica de portafolio.</p>
+    </main>
+    
+    <footer>
+        <p>© 2024 Portafolio</p>
+    </footer>
+</body>
+</html>
